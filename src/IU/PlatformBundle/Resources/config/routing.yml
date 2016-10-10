@@ -1,0 +1,35 @@
+# src/IU/PlatformBundle/Ressources/config/routing.yml
+
+iu_platform_home:
+  path:        /{page}
+  defaults:
+      _controller: IUPlatformBundle:Advert:index
+      page:        1
+  requirements:
+      page: \d*
+
+iu_platform_view:
+  path:        /advert/{id}
+  defaults:
+    _controller: IUPlatformBundle:Advert:view
+  requirements:
+      id: \d+
+
+iu_platform_add:
+  path:        /add
+  defaults:
+      _controller: IUPlatformBundle:Advert:add
+
+iu_platform_edit:
+  path:        /edit/{id}
+  defaults:
+      _controller: IUPlatformBundle:Advert:edit
+  requirements:
+      id: \d+
+
+iu_platform_delete:
+  path:        /delete/{id}
+  defaults:
+      _controller: IUPlatformBundle:Advert:delete
+  requirements:
+      id: \d+

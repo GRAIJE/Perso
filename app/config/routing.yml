@@ -1,0 +1,5 @@
+# app/config/routing.yml
+
+iu_platform:
+    resource: "@IUPlatformBundle/Resources/config/routing.yml"
+    prefix:   /

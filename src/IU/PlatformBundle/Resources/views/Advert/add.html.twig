@@ -1,0 +1,15 @@
+{% extends "IUPlatformBundle::layout.html.twig" %}
+
+
+{% iupatform_body %}
+
+	<h2>Ajouter une annonce</h2>
+	
+	{{ include("IUPlatformBundle::Advert:form.html.twig") }}
+
+	<p>
+		Attention : cette annonce sera ajoutée directement 
+		su la page d'accueil après validation du formulaire.
+	</p>
+
+{% endblock %}
